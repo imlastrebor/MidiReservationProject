@@ -1,0 +1,220 @@
+
+:root {
+    --primary-color: #0093a9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 12px, 8px, 12px, 24px;
+
+}
+
+main{
+    margin: auto;
+    width: 21cm;
+    min-height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1, #area1 p{
+    color: #fff;
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 10px 20px;
+}
+
+a {
+    color: #2a2a72;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#area1, #area4{
+    background-color: var(--primary-color);
+    }
+
+#area1{
+    padding: 8px 40px;
+    align-items: start;
+}
+#area1 img{
+width: 25%;
+margin: 16px 0;
+}
+.header-title{
+    text-align: right;
+& h1{
+font-size: 16px;
+}
+& p{
+    font-size: 12px;
+}
+}
+
+#area3{
+    background-color: #f1f1f1;
+}
+
+    #area1 {
+        display: flex;              /* This makes it a flex container and aligns children in a row */
+        align-items: center;        /* This vertically centers the children in the container */
+        justify-content: space-between; /* Adjust this value to space the items as you prefer */
+    }
+
+    #area2 {
+        display: grid;
+        grid-template-columns: 1fr auto 2fr; /* Two columns */
+        grid-template-rows: auto auto auto; /* Three rows, adjust if different sizing is needed */
+        gap: 10px; /* Space between grid items */
+    }
+
+    #area2 input{
+        border: none;
+        display: inline;
+        font-family: inherit;
+        font-size: inherit;
+        padding: none;
+        width: auto;
+        color: inherit;
+        font-weight: inherit;
+        padding: 0;
+        width: 180px;
+    }
+
+    #area2 h3, h4{
+        margin:0;
+    }
+    #area2 h3{
+        margin-bottom: 4px;
+    }
+    .title{
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .data-small{
+        font-size: 16px;
+        color: var(--primary-color);
+    }
+    .data-big{
+        font-size: 32px;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .date-visit, .boarding-time, .boarding-number {
+        grid-column: 1; /* First column */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-line{
+        grid-column: 2;
+    }
+    
+    .passenger, .departure-arrival, .ticket-order-number {
+        grid-column: 3; /* Third column */
+    }
+
+    #area2 > div {
+        border-bottom: 2px solid #ccc; /* Sets a light gray line as the separator */
+        padding-bottom: 10px; /* Adds some space between the content and the line */
+        margin-bottom: 10px; /* Adds some space below the line before the next section starts */
+    }
+
+    #area2 .center-line{
+        border-bottom: 0px; /* Sets a light gray line as the separator */
+            grid-row: 1/span 3; /* Place it in the second row */
+            width: 100%; /* Ensure it fills the width of the grid column */
+            background-color: #ccc; /* Color of the line */
+            width: 4px;
+            justify-self: center;
+    }
+    
+    #area2 .boarding-number, #area2  .ticket-order-number  {
+        border-bottom: none; /* Removes the border from the last div if you don't want a line at the very bottom */
+    }
+    
+    /* Ensuring no overlapping by specifying rows if needed */
+    .passenger { grid-row: 1; }
+    .departure-arrival { grid-row: 2; }
+    .ticket-order-number { grid-row: 3; }
+
+    .passenger, .arrival, .departure, .ticket-number, .order-number {
+    display: flex;
+    flex-direction: column;
+}
+
+    .departure-arrival, .ticket-order-number{
+        display: flex;
+    }
+
+    .departure, .arrival, .ticket-number, .order-number {
+    display: inline-block; /* Ensures they are treated as inline-level blocks for margin purposes */
+    margin-right: 20px; /* Adds margin to the right of each item, adjust as needed */
+}
+
+.arrival, .order-number {
+    margin-left: 20px; /* Adds additional spacing on the left of the 'Arrival' to separate it from 'Departure' */
+}
+
+#discount{
+    text-align: center;
+}
+
+#discount img{
+    width: 50%;
+}
+
+#area3 {
+    padding: 12px;
+    & h2 {
+        color: #a5a5a5;
+        margin: 0;
+    }
+}
+
+ul {
+    margin: 0;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -36px;
+  }
+  ul.dashed span{
+    margin-right: 40px
+  }
+
+
+#area4{
+    color: #fff;
+    padding: 12px 16px;
+    & h2{
+        margin:0;
+        font-size: 18px;
+    }
+    & p{
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
