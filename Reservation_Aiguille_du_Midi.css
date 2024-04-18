@@ -48,10 +48,6 @@ a:hover {
     background-color: var(--primary-color);
     }
 
-#area1{
-    padding: 8px 40px;
-    align-items: start;
-}
 #area1 img{
 width: 25%;
 margin: 16px 0;
@@ -72,8 +68,9 @@ font-size: 16px;
 
     #area1 {
         display: flex;              /* This makes it a flex container and aligns children in a row */
-        align-items: center;        /* This vertically centers the children in the container */
         justify-content: space-between; /* Adjust this value to space the items as you prefer */
+        padding: 8px 40px;
+    align-items: start;
     }
 
     #area2 {
@@ -101,6 +98,7 @@ font-size: 16px;
     }
     #area2 h3{
         margin-bottom: 4px;
+
     }
     .title{
         font-size: 16px;
@@ -117,6 +115,7 @@ font-size: 16px;
         color: var(--primary-color);
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
 
     .date-visit, .boarding-time, .boarding-number {
